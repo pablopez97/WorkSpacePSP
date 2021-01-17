@@ -1,0 +1,61 @@
+package cliente;
+
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.PrintStream;
+import java.net.InetSocketAddress;
+import java.net.Socket;
+import java.net.UnknownHostException;
+import java.util.Scanner;
+
+public class SocketCliente {
+	
+	public static final int PUERTO = 2017;
+	public static final String IP_SERVER = "localHost";
+	
+	public static void main(String[] args) {
+		
+		System.out.println("---------APLICACION CLIENTE----------");
+		System.out.println("-------------------------------------");
+		
+		Socket socketCliente = null;
+		InputStreamReader entrada = null;
+		PrintStream salida = null;
+		
+		InetSocketAddress direccionServidor = new InetSocketAddress(IP_SERVER, PUERTO);
+		Scanner sc = new Scanner(System.in);
+		
+		try {
+			
+			boolean continuar = true;
+			
+			do {
+				
+				socketCliente = new Socket();
+				socketCliente.connect(direccionServidor);
+				System.out.println("Conexion establecida a..." +IP_SERVER+ "... por el puerto " +PUERTO);
+				
+			}while(continuar);
+			
+		} catch (UnknownHostException excepcion) {
+			System.err.println("No encuentro el servidor en la dirección" + IP_SERVER);
+		} catch (IOException excepcion) {
+			System.err.println("Error de entrada/salida");
+		} catch (Exception e) {
+			System.err.println("Error: " + e);
+		} finally {// ES MUYYY IMPORTANTE QUE EN LOS SOCKETS SIEMPRE SE CIERREN LAS CONEXIONES
+			try {
+				salida.close();
+				entrada.close();
+				socketCliente.close();
+				sc.close();
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}
+		
+
+	}
+
+}

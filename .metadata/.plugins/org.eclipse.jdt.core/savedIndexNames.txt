@@ -1,0 +1,7 @@
+INDEX VERSION 1.131+D:\Cosas de Pablo\Universidad Europea\Segundo año\Programacion de Servicios y Procesos ejercicio\WSEjerciciosPSP\.metadata\.plugins\org.eclipse.jdt.core
+2367897270.index
+2303065686.index
+3245982971.index
+3072534977.index
+940348390.index
+3111183103.index

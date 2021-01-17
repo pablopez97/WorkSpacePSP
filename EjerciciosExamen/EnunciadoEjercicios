@@ -1,0 +1,8 @@
+Ejercicio 2
+
+--------------
+
+Queremos simular un túnel de lavado de coches. Los coches tendrán los atributos matricula, marca y modelo y podrán ser ejecutados como hilos independientes.
+El túnel de lavado será único, y tendrá un método que será lavar coche, que recibirá un coche a lavar. El tiempo el cual el coche estará en el túnel será de 3 segundos para el lavado, 3 segundos para el aclarado y 4 segundos para el encerado (simular estos tiempo parando el hilo). El túnel deberá mostrar por consola la fase por la que va pasando, así como los atributos del coche que está lavando.
+El programa principal deberá de crear 4 coches y un túnel de lavado, y se lanzarán los coches como hilos al mismo tiempo para que vayan todos al túnel de lavado para ser lavados.
+La regla fundamental es que solo pueda entrar un coche a la vez en el túnel de lavado, por lo que una vez entre uno, los demás deberán de esperar su turno.

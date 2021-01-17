@@ -1,0 +1,10 @@
+package server;
+
+public class SockerServer {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
