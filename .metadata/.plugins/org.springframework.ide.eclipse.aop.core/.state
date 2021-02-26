@@ -2,5 +2,8 @@
 <aop-reference-model>
 <aop-project name="EjercicioPruebasHTTP"/>
 <aop-project name="ResPersonas"/>
+<aop-project name="003_EjercicioVideojuegoMVC"/>
+<aop-project name="EjercicioHashUsuarios"/>
+<aop-project name="RestEjercicioVideojuego"/>
 <aop-project name="Prueba"/>
 </aop-reference-model>

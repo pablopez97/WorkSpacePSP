@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<!-- thymeleaf es un motor de creacion de paginas web 
+dinamicas, que nos permite escribir paginas web en funcion
+de los datos que me envie el controlador -->
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1 style="color:green">PAGINA WEB PARA HASHEAR CONTRASENIAS</h1>
+	
+	SU CONTRASENIA HA SIDO HASHEADA Y ALMACENADA CORRECTAMENTE
+	<p th:text="'Has sido registrado ' + ${nombreUsuario}"></p>
+	
+</body>
+</html>
